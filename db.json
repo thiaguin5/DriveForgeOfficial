@@ -1,0 +1,11 @@
+{
+ "posts": [
+   { "id": "1", "title": "Primeiro Post", "views": 100 },
+   { "id": "2", "title": "Segundo Post", "views": 200 }
+ ],
+ "comments": [
+   { "id": "1", "text": "Comentário no Post 1", "postId": "1" },
+   { "id": "2", "text": "Outro comentário no Post 1", "postId": "1" }
+ ],
+ "profile": { "name": "typicode" }
+}
