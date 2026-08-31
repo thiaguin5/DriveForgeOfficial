@@ -1126,3 +1126,35 @@ grid-template-columns: 1fr;
 grid-column: auto;
 }
 }
+
+
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text {
+  animation: fadeUp 0.9s ease-out both;
+}
+
+.hero-stats {
+  animation: fadeUp 1s ease-out 0.25s both;
+}
+
+.search-box {
+  animation: fadeUp 0.8s ease-out 0.15s both;
+}
+
+
