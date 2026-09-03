@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router";
 
 import Home from "./pages/Home";
@@ -7,32 +8,18 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
+  const [state, setState] = useState();
+
   return (
-    <Routes>
-
-      <Route path="/" element={<Home />} />
-
-      <Route
-        path="/veiculos"
-        element={<Vehicles />}
-      />
-
-      <Route
-        path="/financiamento"
-        element={<FinancePage />}
-      />
-
-      <Route
-        path="/sobre"
-        element={<About />}
-      />
-
-      <Route
-        path="/contato"
-        element={<Contact />}
-      />
-
-    </Routes>
+    <div> 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/veiculos" element={<Vehicles />} />
+        <Route path="/financiamento" element={<FinancePage />} />
+        <Route path="/sobre" element={<About />} />
+        <Route path="/contato" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
 
