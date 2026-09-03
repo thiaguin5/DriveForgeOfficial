@@ -6,6 +6,11 @@ import Vehicles from "./pages/Vehicles";
 import FinancePage from "./pages/FinancePage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Cadastro from "./pages/Cadastro";
+
+
+
+
 
 function App() {
   const [state, setState] = useState();
@@ -14,10 +19,11 @@ function App() {
     <div> 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/veiculos" element={<Vehicles />} />
-        <Route path="/financiamento" element={<FinancePage />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/contato" element={<Contact />} />
+        <Route path="/Veiculos" element={<Vehicles />} />
+        <Route path="/Financiamento" element={<FinancePage />} />
+        <Route path="/Sobre" element={<About />} />
+        <Route path="/Contato" element={<Contact />} />
+         <Route path="/Cadastro" element={<Cadastro />} />
       </Routes>
     </div>
   );

@@ -1,5 +1,21 @@
 import "./Search.css";
 
+const buscarCarros = async (modelo) => {
+    const resposta = await fetch(
+        `https://api.pexels.com/v1/search?query=${modelo}&per_page=10`,
+        {
+            headers: {
+                Authorization: "SUA_API_KEY"
+            }
+        }
+    );
+
+    const dados = await resposta.json();
+
+    return dados.photos;
+};
+
+
 function Search() {
   return (
     <section className="search-section">
