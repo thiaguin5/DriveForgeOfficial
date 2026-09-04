@@ -62,7 +62,7 @@ app.post("/api/users", (req, res) => {
 
   const newUser = {
     id: Date.now(),
-    name,
+    nome,
     email,
     password
   };
@@ -125,7 +125,9 @@ app.get("/api/carros/imagens", async (req, res) => {
 
 });
 
-
+app.get("/teste", (req, res) => {
+  res.send("BACKEND FUNCIONANDO");
+});
 // =================================
 // INICIAR SERVIDOR
 // =================================
