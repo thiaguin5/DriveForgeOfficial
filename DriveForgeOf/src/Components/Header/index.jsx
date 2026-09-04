@@ -16,6 +16,9 @@ function Header() {
         <Link to="/about">Sobre</Link>
         <Link to="/contact">Contato</Link>
          <Link to="/Users">Lista de Usuários</Link>
+           <Link to="/SolicitarCompra">Solicitar Compra</Link>
+       
+
 
          
 

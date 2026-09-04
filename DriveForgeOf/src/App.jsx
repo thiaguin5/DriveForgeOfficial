@@ -10,6 +10,9 @@ import Cadastro from "./pages/Cadastro";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Users from "./pages/Users";
+import SolicitarCompra from "./Components/Solicitar Compra/Index";
+import NotFound from "./Components/NotFound"
+
 
 
 
@@ -61,8 +64,18 @@ function App() {
 
         <Route
           path="/users"
-          element={<Users />}
+          element={<users />}
         />
+
+        <Route
+          path="/solicitarcompra"
+          element={<SolicitarCompra/>}
+        />
+         <Route
+          path="*"
+          element={<NotFound/>}
+        />
+        
 
          
 
