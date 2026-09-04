@@ -1,45 +1,29 @@
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
-
-      <div className="hero-overlay"></div>
-
+    <section className="hero">
       <div className="hero-content">
-
         <p className="hero-subtitle">
-          EXCLUSIVIDADE SOBRE QUATRO RODAS
+          DRIVEFORGE PREMIUM MOTORS
         </p>
 
         <h1>
           ENCONTRE O CARRO
           <br />
-          <span>DOS SEUS SONHOS.</span>
+          DOS SEUS SONHOS
         </h1>
 
-        <p className="hero-description">
-          Veículos selecionados para pessoas que buscam
-          performance, luxo e exclusividade.
+        <p>
+          Veículos selecionados para quem procura
+          desempenho, luxo e exclusividade.
         </p>
 
-        <div className="hero-buttons">
-          <button className="primary-button">
-            VER VEÍCULOS
-          </button>
-
-          <button className="secondary-button">
-            CONHEÇA A LOJA
-          </button>
-        </div>
-
+        <Link to="/vehicles" className="hero-button">
+          VER VEÍCULOS
+        </Link>
       </div>
-
-      <div className="hero-scroll">
-       
-        <div className="scroll-line"></div>
-      </div>
-
     </section>
   );
 }

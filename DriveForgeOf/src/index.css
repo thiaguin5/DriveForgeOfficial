@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap");
+
+
+/* =========================================
+   CORES E CONFIGURAÇÕES
+========================================= */
+
+:root {
+  --blue: #0066cc;
+  --blue-dark: #004b99;
+  --blue-light: #eaf4ff;
+
+  --black: #111111;
+  --dark-gray: #333333;
+  --gray: #777777;
+  --light-gray: #eeeeee;
+
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

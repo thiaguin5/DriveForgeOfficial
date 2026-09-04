@@ -1,105 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .header {
   width: 100%;
-  background-color: #080808;
-  border-bottom: 1px solid #252525;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.header-container {
-  width: 90%;
-  max-width: 1400px;
   height: 85px;
-
-  margin: auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-/* LOGO */
+  padding: 0 7%;
+
+  background: var(--white);
+
+  border-bottom: 1px solid #e5e5e5;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
 
 .logo {
-  display: flex;
-  flex-direction: column;
+  font-family: "Oswald", sans-serif;
 
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
 
-  cursor: pointer;
-  line-height: 1;
+  letter-spacing: 2px;
+
+  color: var(--black);
 }
 
-.logo-main {
-  color: white;
-  font-size: 22px;
-  letter-spacing: 4px;
+.logo span {
+  color: var(--blue);
 }
-
-.logo-secondary {
-  color: #c9a24d;
-  font-size: 11px;
-  letter-spacing: 6px;
-
-  margin-top: 5px;
-}
-
-/* MENU */
 
 .nav {
   display: flex;
   align-items: center;
+
   gap: 35px;
 }
 
 .nav a {
-  color: #d6d6d6;
+  color: #444;
 
-  text-decoration: none;
-
-  font-family: Arial, sans-serif;
   font-size: 12px;
+  font-weight: 700;
 
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
 
   transition: 0.3s;
 }
 
 .nav a:hover {
-  color: #c9a24d;
-}
-
-/* BOTÃO */
-
-.contact-button {
-  background-color: transparent;
-
-  border: 1px solid #c9a24d;
-
-  color: #c9a24d;
-
-  padding: 13px 22px;
-
-  font-size: 11px;
-  font-weight: bold;
-
-  letter-spacing: 1.5px;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #c9a24d;
-  color: black;
+  color: var(--blue);
 }

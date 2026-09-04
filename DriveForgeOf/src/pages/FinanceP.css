@@ -1,0 +1,150 @@
+.finance-page {
+  min-height: 100vh;
+
+  padding: 100px 7%;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.96)
+    ),
+    url("/cars/audi-rs6.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.finance-title {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.finance-title p {
+  color: var(--blue);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.finance-title h1 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(45px, 6vw, 75px);
+
+  color: var(--black);
+
+  line-height: 1;
+}
+
+.finance-form {
+  max-width: 550px;
+
+  margin: auto;
+
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid #e2e2e2;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.finance-form label {
+  color: #555;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.finance-form input,
+.finance-form select {
+  padding: 16px;
+
+  background: #f8f8f8;
+
+  border: 1px solid #ddd;
+
+  color: #222;
+
+  outline: none;
+}
+
+.finance-form input:focus,
+.finance-form select:focus {
+  border-color: var(--blue);
+}
+
+.finance-form button {
+  margin-top: 10px;
+
+  padding: 17px;
+
+  background: var(--blue);
+
+  color: white;
+
+  border: none;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+.finance-form button:hover {
+  background: var(--blue-dark);
+}
+
+.finance-result {
+  max-width: 550px;
+
+  margin: 30px auto;
+
+  padding: 35px;
+
+  text-align: center;
+
+  background: white;
+
+  border-top: 4px solid var(--blue);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.finance-result h2 {
+  color: #555;
+
+  font-size: 18px;
+}
+
+.finance-result h3 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: 45px;
+
+  color: var(--blue);
+
+  margin: 15px 0;
+}
+
+.finance-result p {
+  color: #777;
+
+  font-size: 12px;
+}

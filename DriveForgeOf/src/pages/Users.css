@@ -1,0 +1,253 @@
+.users-page {
+  min-height: 100vh;
+
+  padding: 120px 7% 80px;
+
+  background: #f5f7fa;
+}
+
+
+.users-container {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+
+.users-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+
+  padding-bottom: 25px;
+
+  border-bottom: 2px solid #e5e5e5;
+}
+
+
+.users-header p {
+  color: var(--blue);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+
+.users-header h1 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(35px, 5vw, 60px);
+
+  color: var(--black);
+}
+
+
+.users-header span {
+  padding: 12px 20px;
+
+  background: var(--blue);
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =============================
+   LISTA DE USUÁRIOS
+============================= */
+
+.users-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.user-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid #e5e5e5;
+
+  transition: 0.3s;
+}
+
+
+.user-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+/* AVATAR */
+
+.user-avatar {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: var(--blue);
+
+  color: white;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  border-radius: 50%;
+}
+
+
+/* INFORMAÇÕES */
+
+.user-info {
+  flex: 1;
+}
+
+
+.user-info h2 {
+  color: var(--black);
+
+  font-size: 18px;
+
+  margin-bottom: 7px;
+}
+
+
+.user-info p {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ID */
+
+.user-id {
+  color: #999;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =============================
+   MENSAGENS
+============================= */
+
+.users-message,
+.users-error {
+  padding: 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid #e5e5e5;
+}
+
+
+.users-error {
+  color: #d62828;
+}
+
+
+.empty-users {
+  padding: 70px 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid #e5e5e5;
+}
+
+
+.empty-users h2 {
+  color: var(--black);
+
+  margin-bottom: 15px;
+}
+
+
+.empty-users p {
+  color: #777;
+}
+
+
+/* =============================
+   RESPONSIVIDADE
+============================= */
+
+@media (max-width: 600px) {
+
+  .users-page {
+    padding: 100px 5% 60px;
+  }
+
+
+  .users-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+
+  .user-card {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+
+  .user-info {
+    min-width: 0;
+  }
+
+
+  .user-id {
+    width: 100%;
+
+    margin-left: 75px;
+  }
+
+}

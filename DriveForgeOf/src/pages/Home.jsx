@@ -1,17 +1,27 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Search from "../components/Search";
-import Inventory from "../components/Inventory";
-import Finance from "../components/Finance";
+import { useState } from "react";
+
+import Hero from "../Components/Hero";
+
+
+
+
+
+
+import carsData from "../data/cars";
 
 function Home() {
+  const [filteredCars, setFilteredCars] = useState(carsData);
+
   return (
     <>
-      <Header />
       <Hero />
-      <Search />
-      <Inventory />
-      <Finance />
+
+   
+
+     
+      
+
+
     </>
   );
 }

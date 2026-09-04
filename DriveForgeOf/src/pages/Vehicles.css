@@ -1,0 +1,57 @@
+.vehicles-page {
+  min-height: 100vh;
+
+  padding: 100px 7%;
+
+  background: #f8f8f8;
+}
+
+.vehicles-title {
+  margin-bottom: 50px;
+}
+
+.vehicles-title p {
+  color: var(--blue);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.vehicles-title h1 {
+  font-family: "Oswald", sans-serif;
+
+  font-size: clamp(50px, 7vw, 90px);
+
+  color: var(--black);
+
+  line-height: 1;
+}
+
+.vehicles-search {
+  width: 100%;
+
+  max-width: 700px;
+
+  padding: 18px 20px;
+
+  margin-bottom: 50px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  color: #222;
+
+  outline: none;
+}
+
+.vehicles-search:focus {
+  border-color: var(--blue);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 102, 204, 0.1);
+}
