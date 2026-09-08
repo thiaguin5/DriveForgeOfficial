@@ -60,8 +60,8 @@ function App() {
         />
 
         <Route
-          path="/users"
-          element={<Users />}
+          path="/Users"
+          element={<users />}
         />
 
          

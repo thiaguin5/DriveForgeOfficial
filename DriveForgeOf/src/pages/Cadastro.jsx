@@ -3,9 +3,9 @@ import "./Cadastro.css";
 
 function Cadastro() {
   const [formData, setFormData] = useState({
-    name: "",
+    nome: "",
     email: "",
-    password: ""
+    senha: ""
   });
 
   function handleChange(event) {
@@ -43,14 +43,13 @@ function Cadastro() {
 
       // Limpa os campos após o cadastro
       setFormData({
-        name: "",
+        nome: "",
         email: "",
-        password: ""
+        senha: ""
       });
 
     } catch (error) {
       console.error("Erro ao cadastrar:", error);
-
       alert("Erro ao conectar com o servidor.");
     }
   }
@@ -68,9 +67,9 @@ function Cadastro() {
 
           <input
             type="text"
-            name="name"
+            name="nome"
             placeholder="Nome completo"
-            value={formData.name}
+            value={formData.nome}
             onChange={handleChange}
             required
           />
@@ -86,9 +85,9 @@ function Cadastro() {
 
           <input
             type="password"
-            name="password"
+            name="senha"
             placeholder="Senha"
-            value={formData.password}
+            value={formData.senha}
             onChange={handleChange}
             required
           />
