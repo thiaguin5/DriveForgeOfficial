@@ -63,11 +63,7 @@ function App() {
         />
 
         <Route
-<<<<<<< HEAD
-          path="/Users"
-=======
           path="/users"
->>>>>>> 4292c2416978c56823edefb70e28adb9c81fbfcf
           element={<users />}
         />
 
