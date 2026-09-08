@@ -42,7 +42,34 @@ const cars = [
     fuel: "Gasolina",
     transmission: "Automático",
     mileage: "0 km"
-  }
+  },
+
+   {
+    id: 5,
+    brand: "Ferrari",
+    year: 2024,
+    price: 920000,
+    image: "/public/Fe.jpg",
+    fuel: "Gasolina",
+    transmission: "Automático",
+    mileage: "0 km"
+  },
+
+  {
+    id: 6,
+    brand: "Mustang azul",
+    year: 2024,
+    price: 920000,
+    image: "/public/ma.png",
+    fuel: "Gasolina",
+    transmission: "Automático",
+    mileage: "0 km"
+  },
+
+
+  
+
+  
 ];
 
 export default cars;
